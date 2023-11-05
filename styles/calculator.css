@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'digital-font';
+    src: url(../font/DS-DIGI.TTF) format('truetype');
+}
+
+body {
+    background-color: #434141;
+}
+
+.main-daymode {
+    background-color: white;
+}
+
+main {
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    background-color: #1d1d1d;
+    box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.279);
+    border-radius: 20px;
+}
+
+.css-display {
+    font-family: digital-font, Arial, sans-serif;
+    font-size: 40px;
+    margin: auto;
+    min-height: 40px;
+    height: auto;
+    padding: 20px 13px;
+    text-align: left;
+    color: #9ce1a8;
+    background-color: #2a2929;
+    border-radius: 10px;
+    width: 280px;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+    outline: rgba(0, 0, 0, 0.21) solid 1.6px;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.279);
+    word-wrap: break-word;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border: none;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #333333;
+    margin-right: 10px;
+    padding: 6px, 1px;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.279);
+}
+
+button:active {
+    background-color: #555555;
+}
+
+.css-special-operator {
+    font-size: 30px;
+    background-color: #FEA00A;
+}
+
+#clear {
+    background-color: rgb(11, 118, 11);
+    color: lightgreen;
+    font-size: 17px;
+}
+
+/*Change theme*/
+
+.theme {
+    width: 30px;
+    margin: auto;
+}
+
+.css-button-theme {
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: none;
+
+}
+
+.button-daymode {
+    background-color: #E5E5E5;
+    box-shadow: none;
+    color: black;
+}

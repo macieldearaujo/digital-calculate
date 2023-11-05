@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/calculator.css">
+</head>
+
+<body>
+    <main>
+        <p class="js-display css-display"></p>
+        <p>
+            <button id="css-special-operator clear" onclick="
+            document.querySelector('.js-display').innerHTML = ''
+            calculation = '';
+            ">AC</button>
+            <button class="special-operator css-special-operator" onclick="
+            addParentheses();
+            ">( )</button>
+            <button class="special-operator css-special-operator" onclick="
+            calculationUpdate();
+            ">%</button>
+            <button class="special-operator css-special-operator" onclick="
+            calculationUpdate('/');
+            ">/</button>
+        </p>
+        <p>
+            <button class="css-button" onclick="
+            calculationUpdate(1);
+            " onkeydown="
+            ">1</button>
+            <button class="css-button" onclick="
+            calculationUpdate(2);
+            ">2</button>
+            <button class="css-button" onclick="
+            calculationUpdate(3);
+            ">3</button>
+            <button class="special-operator css-special-operator" onclick="
+            calculationUpdate('+');
+            ">+</button>
+        </p>
+        <p>
+            <button class="css-button" onclick="
+            calculationUpdate(4);
+            ">4</button>
+            <button class="css-button" onclick="
+            calculationUpdate(5);
+            ">5</button>
+            <button class="css-button" onclick="
+            calculationUpdate(6);
+            ">6</button>
+            <button class="special-operator css-special-operator" onclick="
+            calculationUpdate('-');
+            ">-</button>
+        </p>
+        <p>
+            <button class="css-button" onclick="
+            calculationUpdate(7);
+                ">7</button>
+            <button class="css-button" onclick="
+            calculationUpdate(8);
+            ">8</button>
+            <button class="css-button" onclick="
+            calculationUpdate(9);
+            ">9</button>
+            <button class="special-operator css-special-operator" onclick="
+            calculationUpdate('*');
+            ">x</button>
+        </p>
+        <p>
+            <button class="css-button" onclick="
+            calculationUpdate(0);
+            ">0</button>
+            <button class="css-button" onclick="
+            calculationUpdate('.');
+            ">.</button>
+            <button class="css-button" onclick="
+            showResult();
+            ">=</button>
+            <button class="special-operator css-special-operator" onclick="
+        
+            ">/</button>
+        </p>
+    </main>
+    
+    <script src="script/calculator.js"></script>
+</body>
+
+</html>
